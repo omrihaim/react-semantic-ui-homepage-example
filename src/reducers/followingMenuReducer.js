@@ -3,13 +3,9 @@ import {
     MASTERHEAD_ON_SCREEN,
   } from '../events'
   
-  const initialState = {
-    followingMenu: {
-        visible: false
-      }
-  }
+  import initialState from './initialState';
   
-  function followingMenuReducer (state = initialState, action) {
+  function followingMenuReducer (state = initialState.followingMenu, action) {
     switch(action.type) {
         case MASTERHEAD_OFF_SCREEN: {
             console.log("MASTERHEAD_OFF_SCREEN");

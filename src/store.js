@@ -2,14 +2,7 @@ import { createStore } from 'redux'; //applyMiddleware, createStore, compose
 
 import reducer from './reducers';
 
-const initialState = {
-  sidebarMenu: {
-    visible: false
-  },
-  followingMenu: {
-    visible: false
-  }
-};
+import initialState from './reducers/initialState';
 
 const store = createStore(
   reducer,

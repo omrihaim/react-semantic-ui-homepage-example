@@ -2,13 +2,9 @@ import {
     TOC_BTN_WAS_PRESSED,
   } from '../events'
   
-  const initialState = {
-    sidebarMenu: {
-        visible: false
-      }
-  }
+  import initialState from './initialState';
   
-  function sidebarMenuReducer (state = initialState, action) {
+  function sidebarMenuReducer (state = initialState.sidebarMenu, action) {
     switch(action.type) {
         case TOC_BTN_WAS_PRESSED: {
             console.log("TOC_BTN_WAS_PRESSED");
